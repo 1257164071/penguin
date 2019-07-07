@@ -12,8 +12,6 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::find(1);
-
 
     }
 }
