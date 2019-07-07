@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('common.default');
-});
+Route::get('/', 'Common\Dashboard@index');
