@@ -25,10 +25,10 @@
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
     <div id="wrapper">
         <!--左侧导航开始-->
-        @include('layouts._navebar_left')
+        @include('common._navebar_left')
         <!--左侧导航结束-->
         <!--右侧部分开始-->
-        @include('layouts._navebar_top')
+        @include('common._navebar_top')
         <!--右侧边栏结束-->
     </div>
 

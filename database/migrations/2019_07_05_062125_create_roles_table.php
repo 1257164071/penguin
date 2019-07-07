@@ -18,7 +18,9 @@ class CreateRolesTable extends Migration
             $table->string('name')->comment("模块名称");
             $table->string('class')->nullable()->comment("CLASS");
             $table->string('url')->nullable()->default("#")->comment('url');
+            $table->string('icon')->nullable()->comment('图标');
             $table->tinyInteger('level')->comment("级别");
+            $table->integer('p_id')->nullable()->comment('p_id');
         });
     }
 
