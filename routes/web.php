@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'Common\Dashboard@index');
+Route::get('/', 'Common\DashboardController@index')->name('index');;
 
 
 Route::get('login', 'SessionsController@create')->name('login');

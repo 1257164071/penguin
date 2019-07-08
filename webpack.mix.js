@@ -24,6 +24,7 @@ mix.scripts([
     'public/js/hplus.js',
     'public/js/contabs.js',
     'public/js/plugins/pace/pace.min.js',
+    'public/js/plugins/toastr/toastr.min.js',
 ], 'public/js/all.js');
 
 
@@ -31,6 +32,7 @@ mix.styles([
     'public/css/bootstrap.min.css',
     'public/css/font-awesome.min.css',
     'public/css/animate.css',
-    'public/css/style.css'
+    'public/css/style.css',
+    'public/css/plugins/toastr/toastr.min.css'
 ], 'public/css/all.css');
 
