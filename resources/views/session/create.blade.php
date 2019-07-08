@@ -10,7 +10,7 @@
 
             <form class="m-t" role="form" action="{{ route('login') }}" method="POST">
                 <div class="form-group">
-                    <input class="form-control" name="user_name" placeholder="用户名" required="">
+                    <input class="form-control" name="account" placeholder="用户名" required="">
                 </div>
                 <div class="form-group">
                     <input type="password" name="password" class="form-control" placeholder="密码" required="">

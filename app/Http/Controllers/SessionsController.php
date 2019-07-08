@@ -19,16 +19,15 @@ class SessionsController extends Controller
             'user_name' =>  'required|max:255',
             'password'  =>  'required',
         ]);
-dump(Auth::attempt($credentials));
 
-die;
         if(Auth::attempt($credentials))
         {
             session()->flash('','');
             return redirect('/');
         }else{
-            session()->flash('warning',"很抱歉，您的用户名和密码不匹配");
+            session()->flash('danger',"很抱歉，您的邮箱和密码不匹配");
             return redirect()->back()->withInput();
+
         }
     }
 }
