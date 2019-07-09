@@ -29,17 +29,29 @@
 // });
 
 
-toastr.options = {
-    debug : true,
-    progressBar : true,
-    positionClass : 'toast-top-right',
-    onclick : null,
-    showDuration : 800,
-    hideDuration : 1000,
-    timeOut : 7000,
-    extendedTimeOut : 1000,
-    showEasing : 'swing',
-    hideEasing : 'linear',
-    showMethod : 'fadeIn',
-    hideMethod : 'fadeOut',
-};
+
+function TableRun(TableElement, url, columns, sidePagination = 'client') {
+
+    TableElement.bootstrapTable({
+        url: url,
+        search: true,
+        pagination: true,
+        showRefresh: true,
+        showToggle: true,
+        showColumns: true,
+        iconSize: 'outline',
+        toolbar: '#exampleTableEventsToolbar',
+        icons: {
+            refresh: 'glyphicon-repeat',
+            toggle: 'glyphicon-list-alt',
+            columns: 'glyphicon-list'
+        },
+        method: 'post',
+        sidePagination: sidePagination,
+        detailView: true,
+        uniqueId: "id",
+        columns: columns
+
+    });
+
+}

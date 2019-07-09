@@ -16,4 +16,7 @@ Route::get('/', 'Common\DashboardController@index')->name('index');;
 
 Route::get('login', 'SessionsController@create')->name('login');
 Route::post('login', 'SessionsController@store')->name('login');
-Route::delete('logout', 'SessionsController@destroy')->name('logout');
+Route::get('logout', 'SessionsController@destroy')->name('logout');
+
+Route::get('role', 'System\RoleController@create')->name('role');
+Route::post('role', 'System\RoleController@store')->name('role');

@@ -9,8 +9,9 @@
             <h3>欢迎使用</h3>
 
             <form class="m-t" role="form" action="{{ route('login') }}" method="POST">
+                {{ csrf_field() }}
                 <div class="form-group">
-                    <input class="form-control" name="account" placeholder="用户名" required="">
+                    <input class="form-control" name="account" placeholder="用户名" value="{{ old('account') }}" required="">
                 </div>
                 <div class="form-group">
                     <input type="password" name="password" class="form-control" placeholder="密码" required="">

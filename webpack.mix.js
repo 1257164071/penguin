@@ -36,3 +36,20 @@ mix.styles([
     'public/css/plugins/toastr/toastr.min.css'
 ], 'public/css/all.css');
 
+mix.scripts([
+    'public/js/jquery.min.js',
+    'public/js/bootstrap.min.js',
+    'public/js/plugins/bootstrap-table/bootstrap-table.min.js',
+    'public/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js',
+    'public/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js',
+
+], 'public/js/content.js');
+
+mix.styles([
+    'public/css/bootstrap.min.css',
+    'public/css/font-awesome.css',
+    'public/css/plugins/bootstrap-table/bootstrap-table.min.css',
+    'public/css/animate.css',
+    'public/css/style.css',
+
+], 'public/css/content.css');

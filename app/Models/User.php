@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-class User extends Model
+class User extends Authenticatable
 {
     //
 
@@ -12,4 +12,11 @@ class User extends Model
         'password',
     ];
 
+    public function get_user_icon()
+    {
+        if($this->icon == null){
+            return "/img/profile_small.jpg";
+        }
+        return $this->icon;
+    }
 }
